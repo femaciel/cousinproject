@@ -9,10 +9,6 @@
 $color-titulos: rgba(249, 249, 250, 0.904);
 $color-parrafos: rgb(252, 252, 252);
 
-/*VARIABLES CON OPERACIONES*/
-$height-imgfooter: 250px;
-$width-imgfooter: 300px;
-
 /*MIXIN*/
 @mixin contenido-galeria ($height-contenido-galeria, $width-contenido-galeria, ) {
     height: $height-contenido-galeria;
@@ -413,27 +409,6 @@ body {
     background-image: linear-gradient(to bottom, rgb(20, 52, 141), rgba(16, 16, 83, 0.658))
 }
 
-/*A CORREGIR CON TAMAÑO DE IMAGENES*/
-#logoBlackBear {
-    height: $height-imgfooter;
-    width: $width-imgfooter;
-}
-
-#logoBxsRecordings {
-    height: $height-imgfooter + 50px;
-    width: $width-imgfooter + 300px;
-}
-
-#logoTranceRoom {
-    height: $height-imgfooter - 175px;
-    width: $width-imgfooter - 150px;
-}
-
-#logoTranceRoomRecordings {
-    height: $height-imgfooter - 50px;
-    width: $width-imgfooter - 125px;
-}
-
 /*BLOQUES DE BEM*/
 .menu {
     display: flex;
@@ -507,15 +482,7 @@ body {
     justify-content: left;
     align-items: flex-start;
 
-    &__logo {
-        width: 75;
-        height: 30px;
-        margin: 5px 5px 5px 5px;
-    }
-
-    &__redes {
-        width: 35px;
-        height: 35px;
+    &__logos {
         margin: 5px 5px 5px 5px;
     }
 }

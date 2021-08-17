@@ -5,7 +5,6 @@
   padding: 0; }
 
 /*VARIABLES*/
-/*VARIABLES CON OPERACIONES*/
 /*MIXIN*/
 /*ESTILO GENERAL*/
 h1 {
@@ -319,23 +318,6 @@ body {
 .mainLanzamientos {
   background-image: linear-gradient(to bottom, #14348d, rgba(16, 16, 83, 0.658)); }
 
-/*A CORREGIR CON TAMAÑO DE IMAGENES*/
-#logoBlackBear {
-  height: 250px;
-  width: 300px; }
-
-#logoBxsRecordings {
-  height: 300px;
-  width: 600px; }
-
-#logoTranceRoom {
-  height: 75px;
-  width: 150px; }
-
-#logoTranceRoomRecordings {
-  height: 200px;
-  width: 175px; }
-
 /*BLOQUES DE BEM*/
 .menu {
   display: flex; }
@@ -390,13 +372,7 @@ body {
   flex-wrap: wrap;
   justify-content: left;
   align-items: flex-start; }
-  .iconosHeader__logo {
-    width: 75;
-    height: 30px;
-    margin: 5px 5px 5px 5px; }
-  .iconosHeader__redes {
-    width: 35px;
-    height: 35px;
+  .iconosHeader__logos {
     margin: 5px 5px 5px 5px; }
 
 .iconosError404 {
