@@ -11,7 +11,7 @@ h1 {
   color: rgba(249, 249, 250, 0.904);
   font-style: normal;
   font-weight: bold;
-  font-size: 70px;
+  font-size: 35px;
   text-align: center; }
 
 h2 {
@@ -100,20 +100,14 @@ fieldset {
   margin-bottom: 15px; }
 
 /*BOX MODELING POR SECCIONES*/
-header {
-  padding: 10px 10px 10px 10px;
-  margin-bottom: 10px; }
-
 body {
-  padding: 10px 10px 10px 10px;
-  margin-bottom: 10px; }
+  padding: 5px 5px 5px 5px; }
 
 /*MEDIAS QUERY*/
 @media only screen and (max-width: 320px) {
   #presskitFoto {
     width: 80%; }
   #presskit {
-    display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -163,7 +157,7 @@ body {
     left: 150px;
     display: inline; } }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 768) {
   #presskitFoto {
     width: 80%; }
   #presskit {
@@ -217,7 +211,7 @@ body {
     left: 150px;
     display: inline; } }
 
-@media only screen and (max-width: 790px) {
+@media only screen and (max-width: 1024) {
   #presskitFoto {
     width: 80%; }
   #presskit {
@@ -240,8 +234,8 @@ body {
 .header {
   position: sticky;
   top: 0%;
-  background-color: #14348d;
-  margin-bottom: 10px; }
+  background-color: #1956c7;
+  margin-bottom: 5px; }
 
 /*ESTILO CONTACTO*/
 .formularioContacto {
@@ -250,16 +244,21 @@ body {
   margin: 10px 10px 10px 10px; }
 
 .mainContacto {
-  background-image: linear-gradient(to bottom, #14348d, rgba(16, 16, 83, 0.658)); }
+  background-image: linear-gradient(to bottom, #1956c7, rgba(57, 57, 209, 0.658)); }
 
 /*ESTILOS EVENTOS*/
+.mainEventos {
+  background-image: linear-gradient(to bottom, #1956c7, rgba(57, 57, 209, 0.658)); }
+
 #proximosEventos {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: 50px 720px;
   grid-template-areas: "areaTitulo areaTitulo" "areaFoto1 areaFoto2";
   align-items: stretch;
-  justify-content: space-around; }
+  justify-content: center;
+  justify-items: center;
+  padding: 10px 10px 10px 10px; }
 
 #proximosEventosTitulo {
   grid-area: areaTitulo; }
@@ -276,7 +275,9 @@ body {
   grid-template-rows: 50px 720px;
   grid-template-areas: "areaTitulo areaTitulo" "areaFoto1 areaFoto2";
   align-items: stretch;
-  justify-content: space-around; }
+  justify-content: space-around;
+  justify-items: center;
+  padding: 10px 10px 10px 10px; }
 
 #eventosPasadosTitulo {
   grid-area: areaTitulo; }
@@ -289,22 +290,11 @@ body {
 
 /*ESTILO GALERÍA*/
 .iframeGaleria {
-  height: 480px;
-  width: 720px;
-  margin: 15px 15px 15px 15px;
-  padding: 15px 15px 15px 15px; }
-
-.imagenesEventos {
-  height: 640px;
-  width: 720px;
-  margin: 15px 15px 15px 15px;
-  padding: 15px 15px 15px 15px; }
-
-.mainEventos {
-  background-image: linear-gradient(to bottom, #14348d, rgba(16, 16, 83, 0.658)); }
+  height: 240px;
+  width: 360px; }
 
 .mainGaleria {
-  background-image: linear-gradient(to bottom, #14348d, rgba(16, 16, 83, 0.658)); }
+  background-image: linear-gradient(to bottom, #1956c7, rgba(57, 57, 209, 0.658)); }
 
 .setsCompletos {
   display: flex;
@@ -316,7 +306,15 @@ body {
 
 /*ESTILO LANZAMIENTOS*/
 .mainLanzamientos {
-  background-image: linear-gradient(to bottom, #14348d, rgba(16, 16, 83, 0.658)); }
+  background-image: linear-gradient(to bottom, #1956c7, rgba(57, 57, 209, 0.658)); }
+
+.proximosLanzamientos {
+  display: block;
+  margin: auto;
+  align-items: stretch;
+  justify-content: center;
+  justify-items: center;
+  padding: 10px 10px 10px 10px; }
 
 /*BLOQUES DE BEM*/
 .menu {
@@ -341,7 +339,7 @@ body {
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: center;
-  background-image: linear-gradient(to bottom, #14348d, rgba(16, 16, 83, 0.658)); }
+  background-image: linear-gradient(to bottom, #1956c7, rgba(57, 57, 209, 0.658)); }
   .presskit__foto {
     padding: 5px 5px 5px 5px; }
   .presskit__parrafo {
@@ -350,21 +348,19 @@ body {
     margin: 5px 5px 5px 5px;
     padding: 25px 25px 25px 25px; }
 
-.setsCompletos {
-  margin-top: 15px;
-  margin-bottom: 15px; }
-  .setsCompletos__fieldset {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-    border: none; }
-  .setsCompletos__video {
-    height: 480px;
-    width: 720px;
-    margin: 15px 15px 15px 15px;
-    padding: 15px 15px 15px 15px; }
+.setsCompletos__fieldset {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  border: none; }
+
+.setsCompletos__video {
+  height: 280px;
+  width: 320px;
+  margin: 15px 15px 15px 15px;
+  padding: 15px 15px 15px 15px; }
 
 .iconosHeader, footer {
   display: flex;
@@ -391,5 +387,8 @@ body {
 footer {
   justify-content: space-between;
   align-items: center;
-  background-color: rgba(17, 17, 85, 0.658);
-  margin-top: 10px; }
+  background-color: rgba(57, 57, 209, 0.658);
+  margin-top: 5px; }
+
+.altoLogo {
+  max-height: 150px; }

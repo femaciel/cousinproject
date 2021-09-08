@@ -13,8 +13,6 @@ $color-parrafos: rgb(252, 252, 252);
 @mixin contenido-galeria ($height-contenido-galeria, $width-contenido-galeria, ) {
     height: $height-contenido-galeria;
     width: $width-contenido-galeria;
-    margin: 15px 15px 15px 15px;
-    padding: 15px 15px 15px 15px;
 }
 
 /*ESTILO GENERAL*/
@@ -23,7 +21,7 @@ h1 {
     color: $color-titulos;
     font-style: normal;
     font-weight: bold;
-    font-size: 70px;
+    font-size: 35px;
     text-align: center;
 }
 
@@ -129,26 +127,20 @@ fieldset {
 }
 
 /*BOX MODELING POR SECCIONES*/
-header {
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 10px;
-}
 
 body {
-    padding: 10px 10px 10px 10px;
-    margin-bottom: 10px;
+    padding: 5px 5px 5px 5px;
 }
 
 /*MEDIAS QUERY*/
 
-@media only screen and (max-width:320px) {
+@media only screen and (max-width: 320px) {
 
     #presskitFoto {
         width: 80%;
     }
 
     #presskit {
-        display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -212,7 +204,7 @@ body {
     }
 }
 
-@media only screen and (max-width:420px) {
+@media only screen and (max-width:768) {
 
     #presskitFoto {
         width: 80%;
@@ -283,7 +275,7 @@ body {
     }
 }
 
-@media only screen and (max-width:790px) {
+@media only screen and (max-width:1024) {
 
     #presskitFoto {
         width: 80%;
@@ -314,8 +306,9 @@ body {
 .header {
     position: sticky;
     top: 0%;
-    background-color: rgb(20, 52, 141);
-    margin-bottom: 10px;
+    background-color: rgb(25, 86, 199);
+    margin-bottom: 5px;
+
 }
 
 /*ESTILO CONTACTO*/
@@ -327,10 +320,14 @@ body {
 }
 
 .mainContacto {
-    background-image: linear-gradient(to bottom, rgb(20, 52, 141), rgba(16, 16, 83, 0.658))
+    background-image: linear-gradient(to bottom, rgb(25, 86, 199), rgba(57, 57, 209, 0.658))
 }
 
 /*ESTILOS EVENTOS*/
+
+.mainEventos {
+    background-image: linear-gradient(to bottom, rgb(25, 86, 199), rgba(57, 57, 209, 0.658))
+}
 
 #proximosEventos {
     display: grid;
@@ -339,7 +336,9 @@ body {
     grid-template-areas: "areaTitulo areaTitulo"
         "areaFoto1 areaFoto2";
     align-items: stretch;
-    justify-content: space-around;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 10px 10px 10px;
 }
 
 #proximosEventosTitulo {
@@ -362,6 +361,9 @@ body {
         "areaFoto1 areaFoto2";
     align-items: stretch;
     justify-content: space-around;
+    justify-items: center;
+    padding: 10px 10px 10px 10px;
+
 }
 
 #eventosPasadosTitulo {
@@ -379,19 +381,11 @@ body {
 /*ESTILO GALERÍA*/
 
 .iframeGaleria {
-    @include contenido-galeria(480px, 720px)
-}
-
-.imagenesEventos {
-    @include contenido-galeria(640px, 720px)
-}
-
-.mainEventos {
-    background-image: linear-gradient(to bottom, rgb(20, 52, 141), rgba(16, 16, 83, 0.658))
+    @include contenido-galeria(240px, 360px)
 }
 
 .mainGaleria {
-    background-image: linear-gradient(to bottom, rgb(20, 52, 141), rgba(16, 16, 83, 0.658))
+    background-image: linear-gradient(to bottom, rgb(25, 86, 199), rgba(57, 57, 209, 0.658))
 }
 
 .setsCompletos {
@@ -406,7 +400,16 @@ body {
 /*ESTILO LANZAMIENTOS*/
 
 .mainLanzamientos {
-    background-image: linear-gradient(to bottom, rgb(20, 52, 141), rgba(16, 16, 83, 0.658))
+    background-image: linear-gradient(to bottom, rgb(25, 86, 199), rgba(57, 57, 209, 0.658))
+}
+
+.proximosLanzamientos {
+    display: block;
+    margin: auto;
+    align-items: stretch;
+    justify-content: center;
+    justify-items: center;
+    padding: 10px 10px 10px 10px;
 }
 
 /*BLOQUES DE BEM*/
@@ -439,7 +442,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(to bottom, #14348d, rgba(16, 16, 83, 0.658));
+    background-image: linear-gradient(to bottom, rgb(25, 86, 199), rgba(57, 57, 209, 0.658));
 
     &__foto {
         padding: 5px 5px 5px 5px;
@@ -454,9 +457,6 @@ body {
 }
 
 .setsCompletos {
-    margin-top: 15px;
-    margin-bottom: 15px;
-
     &__fieldset {
         display: flex;
         flex-direction: row;
@@ -467,8 +467,8 @@ body {
     }
 
     &__video {
-        height: 480px;
-        width: 720px;
+        height: 280px;
+        width: 320px;
         margin: 15px 15px 15px 15px;
         padding: 15px 15px 15px 15px;
 
@@ -508,6 +508,10 @@ footer {
 
     justify-content: space-between;
     align-items: center;
-    background-color: rgba(17, 17, 85, 0.658);
-    margin-top: 10px;
+    background-color: rgba(57, 57, 209, 0.658);
+    margin-top: 5px;
+}
+
+.altoLogo {
+    max-height: 150px;
 }

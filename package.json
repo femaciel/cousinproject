@@ -1,18 +1,26 @@
 {
   "name": "root",
   "version": "1.0.0",
-  "description": "",
+  "description": "Este proyecto ha sido iniciado con la finalidad de poner en practica los conceptos aprendidos a lo largo del curso \"Desarrollo Web\" brindado por la escuela Coder House.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build-css": "node-sass --include-path scss scss/cousin.scss css/cousindesafioscss.css",
     "watch-css": "nodemon -e scss -x \"npm run build-css\""
-
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
     "node-sass": "^6.0.1",
     "nodemon": "^2.0.12"
-  }
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/femaciel/cousinproject.git"
+  },
+  "bugs": {
+    "url": "https://github.com/femaciel/cousinproject/issues"
+  },
+  "homepage": "https://github.com/femaciel/cousinproject#readme"
 }
